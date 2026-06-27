@@ -1,0 +1,72 @@
+@'
+# Python
+.venv/
+venv/
+env/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Configs locais e credenciais
+.env
+*.env
+configs/config.local.yaml
+configs/*.local.yaml
+
+# Dados médicos / imagens / bases
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
+
+*.jpg
+*.jpeg
+*.png
+*.dcm
+*.nii
+*.nii.gz
+*.mha
+*.nrrd
+*.csv
+*.xlsx
+*.xls
+*.parquet
+
+# Modelos e artefatos pesados
+models/checkpoints/*
+models/final/*
+!models/checkpoints/.gitkeep
+!models/final/.gitkeep
+
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.pickle
+*.joblib
+mlruns/
+wandb/
+runs/
+
+# Contexto privado de IA
+playbooks/
+prompts/
+.ai_context/
+_private/
+_private_ai_context/
+CLAUDE.local.md
+CODEX.local.md
+AGENTS.local.md
+.claude/
+.codex/
+
+# Sistema / IDE
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+'@ | Set-Content .gitignore -Encoding UTF8

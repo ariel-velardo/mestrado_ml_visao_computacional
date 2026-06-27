@@ -1,0 +1,16 @@
+@'
+numpy
+pandas
+matplotlib
+scikit-learn
+opencv-python
+pillow
+pyyaml
+tqdm
+jupyter
+notebook
+ipykernel
+torch
+torchvision
+xgboost
+'@ | Set-Content requirements.txt -Encoding UTF8
