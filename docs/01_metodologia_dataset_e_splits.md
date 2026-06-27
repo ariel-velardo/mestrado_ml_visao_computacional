@@ -182,9 +182,9 @@ Esses arquivos são locais e não devem ser versionados.
 
 | Split | Healthy | Hepatic_Steatosis | Total |
 |---|---:|---:|---:|
-| Train | 1.143 | 1.360 | 2.503 |
-| Validation | 206 | 270 | 476 |
-| Test | 262 | 316 | 578 |
+| Train | 1.095 | 1.364 | 2.459 |
+| Validation | 256 | 282 | 538 |
+| Test | 260 | 300 | 560 |
 
 ## 13. Validação de leakage
 
@@ -237,3 +237,4 @@ O projeto seguirá inicialmente como estudo experimental de classificação de i
 - avaliação por grupo;
 - documentação explícita das limitações;
 - proibição de split aleatório por imagem/slice.
+
