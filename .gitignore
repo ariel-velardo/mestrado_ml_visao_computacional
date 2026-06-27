@@ -70,3 +70,5 @@ AGENTS.local.md
 Thumbs.db
 .vscode/settings.json
 '@ | Set-Content .gitignore -Encoding UTF8
+# Derived report artifacts
+reports/tables/*.json
