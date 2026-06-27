@@ -72,3 +72,6 @@ Thumbs.db
 '@ | Set-Content .gitignore -Encoding UTF8
 # Derived report artifacts
 reports/tables/*.json
+
+# Derived report artifacts
+reports/tables/*.json
