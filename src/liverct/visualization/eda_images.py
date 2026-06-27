@@ -234,7 +234,9 @@ def plot_boxplot_by_class(
         values.append(group[value_column].dropna())
 
     fig, ax = plt.subplots(figsize=(8, 5))
-    ax.boxplot(values, labels=labels, showfliers=False)
+    ax.boxplot(values, showfliers=False)
+    ax.set_xticks(range(1, len(labels) + 1))
+    ax.set_xticklabels(labels)
     ax.set_title(title)
     ax.set_ylabel(ylabel)
 
@@ -268,9 +270,12 @@ def plot_boxplot_by_split_class(
         values.append(group[value_column].dropna())
 
     fig, ax = plt.subplots(figsize=(11, 5))
-    ax.boxplot(values, labels=labels, showfliers=False)
+    ax.boxplot(values, showfliers=False)
+    ax.set_xticks(range(1, len(labels) + 1))
+    ax.set_xticklabels(labels)
     ax.set_title(title)
     ax.set_ylabel(ylabel)
 
     fig.savefig(output_path, dpi=150, bbox_inches="tight")
     plt.close(fig)
+
